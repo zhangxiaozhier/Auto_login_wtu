@@ -31,7 +31,11 @@
     ```
 
 ## 3.效果
-![login](./pic/login.png)
+<div align=center>
+    <img src="./pic/login.png"/>
+</div>
+
+
 https://user-images.githubusercontent.com/55654554/225511120-fca2a81e-5fdb-4255-ad14-0b05a2d8c0dd.mp4
 
 
