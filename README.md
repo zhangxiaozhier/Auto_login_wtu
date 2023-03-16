@@ -21,13 +21,17 @@
     ```
     tmux attach -t connection_network
     ```
-4. 执行python程序`(先配置py文件，再运行)`
+4. 安装selenium
+   ```
+   pip install selenium==4.2.0
+   ```
+5. 运行python程序`(先配置py文件，再运行)` 
     ```
     python connection_network.py
     ```
 
 ## 3.效果
-<video src="./auto_login.mp4"></video>
+https://user-images.githubusercontent.com/55654554/225511120-fca2a81e-5fdb-4255-ad14-0b05a2d8c0dd.mp4
 
 
   
