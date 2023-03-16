@@ -18,7 +18,7 @@ def connection_network(url):
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-gpu')
     options.add_argument('--disable-dev-shm-usage')
-    path=Service('/home/xss/zhangxiaozhi/packages/chromedriver_linux64/chromedriver')
+    path=Service('/home/xss/zhangxiaozhi/packages/chromedriver_linux64/chromedriver')  #修改浏览器驱动的绝对路径
     driver = webdriver.Chrome(options=options,service=path)
     driver.minimize_window()  #最小化浏览器
     #driver.set_window_size(424, 424)
@@ -57,7 +57,7 @@ def count_down(weeks=0, days=0, hours=0, minutes=0, seconds=0):
 
 if __name__ == '__main__':
     e_time = 1
-    schedule.every(e_time).seconds.do(connection_network, url='http://172.30.1.1')    
+    schedule.every(e_time).seconds.do(connection_network, url='http://172.30.1.1')    #设置目标url
     # schedule.every().days.at("12:41").do(connection_network)
 
     while True:
