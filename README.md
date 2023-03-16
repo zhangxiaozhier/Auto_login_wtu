@@ -4,7 +4,7 @@
 ## 1. 版本
 - Ubuntu `22.04` (不做要求)
 - google浏览器    `111.0.5563.64（正式版本） （64 位）`
-- chromedriver_linux64    `111.0.5563.64`
+- chromedriver_linux64    `111.0.5563.64` (已经提供文件)
 - selenium  `4.2.0`
 - tmux  `3.2a`(这个版本不做要求)
 
