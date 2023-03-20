@@ -22,9 +22,10 @@
     ```
     tmux attach -t connection_network
     ```
-4. 安装selenium
+4. 安装selenium，schedule
    ```
    pip install selenium==4.2.0
+   pip install schedule
    ```
 5. 运行python程序`(先配置py文件，再运行)` 
     ```
