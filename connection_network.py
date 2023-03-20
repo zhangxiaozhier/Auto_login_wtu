@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 
 # 定义打开链接
 def connection_network(url):
-    count_down(minutes=10,seconds=0)   #修改时间多久登陆一次，默认10分钟
+    count_down(minutes=30,seconds=0)   #修改时间多久登陆一次，默认10分钟
     my_username = ''     #填写自己的账号
     my_password = ''      #填写自己的密码
     global driver
@@ -18,13 +18,14 @@ def connection_network(url):
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-gpu')
     options.add_argument('--disable-dev-shm-usage')
-    path=Service('/home/xss/zhangxiaozhi/packages/chromedriver_linux64/chromedriver')  #修改浏览器驱动的绝对路径
+    path=Service('/home/zzz/zhangxiaozhi/packages/chromedriver_linux64/chromedriver')  #修改浏览器驱动的绝对路径
     driver = webdriver.Chrome(options=options,service=path)
-    driver.minimize_window()  #最小化浏览器
-    #driver.set_window_size(424, 424)
-    driver.get(url)
-    time.sleep(2)
+    #driver.minimize_window()  #最小化浏览器
+    driver.set_window_size(200, 200)
+    driver.set_page_load_timeout(20)
     try:
+        driver.get(url)
+        time.sleep(1)
         input_username = driver.find_element(By.XPATH, '//input[@id="username"]')
         input_username.send_keys(my_username)
         time.sleep(1)
